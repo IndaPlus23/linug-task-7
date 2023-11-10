@@ -214,8 +214,9 @@ fn parse_imm(s: &str, size: u8) -> Result<i32, io::Error> {
 
     if let Ok(parsed_value) = u32::from_str_radix(&bit_string, 2) {
         let parsed_int = parsed_value as i32;
-        let max_val: i32 = ((size as i32-1)^2)-1;
-        let min_val: i32 = -((size as i32-1)^2);
+        let max_val: i32 = (i32::pow(2, size as u32-1))-1;
+        let min_val: i32 = -(i32::pow(2, size as u32-1));
+   
         if parsed_int <= max_val && parsed_int >= min_val {
             return Ok(parsed_int);
         }
