@@ -32,7 +32,7 @@ If the imm is shorter than the max bit size for the instruction, 0s or 1s depend
 🀲 = 0,🀾🀳🀹🀹 = -11, As you can see, it is very intuitive and will probably soon replace numbers in all languages
 
 ### Comments
-Althougt it is not recommended to add comments due to the self-explainable nature of the language, It is possible to add comments by simply writing anything after each instruction as anything after the dominos will be ignored
+Although it is not recommended to add comments due to the self-explainable nature of the language, It is possible to add comments by simply writing anything after each instruction as anything after the dominos will be ignored
 
 
 ### How to use
